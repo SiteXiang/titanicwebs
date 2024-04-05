@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">An analysis of Titanic survivors</h1> <!-- 使用特定类名为标题添加样式 -->
+    <div class="book">
+        <div class="page active">
+            <div class="content">
+                <h1>Titanic Survivor Analysis Report</h1>
+        <p>Overview<p></p>
+            This report analyzes the correlation between the survival rates of the Titanic passengers and factors such as gender, passenger class, and age distribution, based on the provided statistical charts. The data reflects the variance in individual survival probabilities during the 1912 Titanic maritime disaster.
+            <p></p>
+            Survival Rate by Gender<p></p>
+            Chart one displays the distribution of survival rates across gender. A significant disparity indicates that female passengers had a markedly higher survival rate compared to male passengers. Specifically, the survival rate for females exceeded 70%, while that for males was just above 10%. This may reflect the "women and children first" evacuation principle of the time.
+            <p></p>
+            Survival Rate by Passenger Class<p></p>
+            Chart two compares the survival rates of passengers from different cabin classes. First-class passengers had the highest survival rate, around 60%, followed by second-class passengers, whose survival rate was close to 50%. The third-class passengers experienced the lowest survival rate, approximately 30%. This could be associated with the proximity of different passenger classes to life-saving facilities and their evacuation priorities.
+            <p></p>
+            Age Distribution by Survival Status<p></p>
+            Chart three presents a density plot of the age distribution among survivors and non-survivors. Two primary trends can be observed:
+            <p></p>
+            Among the survivors, there is a relatively higher proportion of children, especially in the 0-10 age range, which likely correlates with children being given rescue priority.
+            The age distribution of non-survivors is broader, with a pronounced density peak among young adults (20-30 years old).
+            Overall, the age distribution suggests that younger passengers and children had a comparatively higher chance of survival.
+            <p></p>
+            Conclusion<p></p>
+            In summary, the distribution of Titanic survivors was evidently influenced by gender, passenger class, and age. Female passengers, first-class passengers, and younger passengers, including children, were more prevalent among the survivors. These findings indicate that socio-economic status and gender played a significant role in the chances of survival during this maritime tragedy.</p>
+        <img src="img/1.png" alt="Page 1">
+      </div>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Titanic Survivor Analysis Report: Passenger Class, Age, and Fare</h1>
+        <p>Executive Summary<p></p>
+            This analytical report provides insights into the survival rates of the Titanic passengers, focusing on three main variables: passenger class, age, and fare. The data suggests a correlation between these factors and the likelihood of survival during the disaster.
+            <p></p>
+            Survival Rate by Passenger Class<p></p>
+            The first chart indicates the survival rate by passenger class. The survival rates are highest for the first-class passengers at just over 60%, indicating a significant survival advantage. The second-class passengers had a survival rate of approximately 50%. The third-class passengers had the lowest survival rate, slightly above 30%. This gradient of survival rates among classes may reflect the varying levels of access to emergency resources and evacuation protocols.
+            <p></p>
+            Age Distribution by Survival Status<p></p>
+            The second chart depicts the age distribution for survivors and non-survivors. The age distribution for survivors peaks between 20 to 40 years, indicating that the majority of survivors were young adults. The non-survivor distribution also shows a significant count in the same age range but with a less pronounced peak, suggesting that while a substantial number of young adults did not survive, their survival rate was comparatively higher. Notably, there are survivor counts across all age ranges, including older passengers, though fewer in number.
+            <p></p>
+            Fare Distribution by Survival Status<p></p>
+            The third chart presents the fare distribution for survivors versus non-survivors. It shows that a higher number of survivors paid fares up to 50 units of currency. The count of survivors drops significantly for higher fares, although there is a small increase around the 100 currency mark. The non-survivors are predominantly clustered at the lower fare ranges, implying that passengers who paid lower fares had a lower chance of survival. The small peak in non-survivor count at higher fares suggests that not all high-paying passengers managed to survive.
+            <p></p>
+            Insights and Conclusions<p></p>
+            The charts collectively suggest that higher economic status, as indicated by the ability to afford first-class tickets and higher fares, was a factor in survival. Moreover, the age distribution supports the understanding that younger adults had a higher survival rate. The data can be interpreted to reflect social disparities in the context of emergency response, where socio-economic privilege afforded certain passengers a survival advantage.
+            <p></p>
+            This report has been crafted to be concise, focusing on clear trends and noteworthy observations. For a more detailed analysis or additional data processing, please provide further instructions or queries.</p></p>
+        <img src="img/2.png" alt="Page 2">
+      </div>
+      <button class="prev">Previous Page</button>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Titanic Survivor Analysis Report: Correlation, Family Size, and Embarkation Port</h1>
+        <p>Introduction<p></p>
+            Furthering the analysis of Titanic survivor data, we present findings based on the correlation matrix, family size, and embarkation port. These factors offer additional context into the survival dynamics during the tragedy.
+            <p></p>
+            Correlation Heatmap Analysis<p></p>
+            The correlation heatmap provides a quantitative view of the relationship between different variables and survival. Key observations include:
+            <p></p>
+            There is a strong positive correlation between survival and being female (0.54), which is consistent with previous observations of gender influence.
+            Passenger class (Pclass) shows a significant negative correlation (-0.34) with survival, reiterating that lower class (higher Pclass value) passengers had lower survival rates.
+            Fare shows a positive correlation (0.26) with survival, aligning with the inference that higher-paying passengers had better survival odds.
+            Surprisingly, the variable 'Cabin_Missing' (whether a passenger’s cabin information is missing) has a noticeable negative correlation (-0.32) with survival, potentially indicating that passengers with unrecorded cabin data were less likely to survive.
+            The 'Embarked' variables (C, Q, S) indicate the port of embarkation. 'Embarked_C' (Cherbourg) has a slight positive correlation (0.17) with survival, whereas 'Embarked_S' (Southampton) has a slight negative correlation (-0.15).
+            <p></p>
+            Survival Rate by Family Size<p></p>
+            The second chart shows survival rates across different family sizes. Passengers with family sizes of 0 (traveling alone) have the lowest survival rates. Those with a family size of 1 to 3 exhibit higher survival rates, with the peak at family size 3. As family size increases beyond 3, the survival rate decreases notably.
+            <p></p>
+            Survival Rate by Embarkation Port<p></p>
+            The third chart compares survival rates based on the port of embarkation. Passengers who embarked at Cherbourg (C) have the highest survival rate, followed by Queenstown (Q), with Southampton (S) having the lowest. This may be influenced by the proportion of first-class passengers embarking from Cherbourg, which is known to be higher compared to the other ports.
+            <p></p>
+            Comprehensive Insights<p></p>
+            Integrating these findings with previous analyses, it’s apparent that survival on the Titanic was a multifaceted issue influenced by socio-economic status, gender, and family connections. The correlation data provides a statistically significant backing to the observational trends seen in survival rates by gender and class. Furthermore, the family size analysis suggests that having family members onboard could enhance survival prospects to a certain extent, possibly due to better mutual support and aid during evacuation. Lastly, the embarkation port might serve as an indirect indicator of passenger socio-economic status, influencing their access to survival resources.
+            <p></p>
+            Conclusion<p></p>
+            The survival patterns on the Titanic were complex and influenced by a blend of socio-demographic factors. Higher socio-economic status, gender, family presence, and even the embarkation port played roles in passenger survival rates. Such multifactorial influences highlight the societal structures and norms of the early 20th century and their impact during catastrophic events.</p>
+        <img src="img/3.png" alt="Page 3">
+      </div>
+      <button class="prev">Previous Page</button>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Titanic Survivor Analysis Report: Intersection of Gender and Age</h1>
+        <p>Introduction<p></p>
+            This segment of the analysis examines the survival rates on the Titanic, taking into account the intersection of gender and age. The provided bar chart categorizes passengers into six groups based on gender (female, male) and age ranges (16-32, 32-48, 48+).
+            <p></p>
+            Analysis of Survival Rates by Gender and Age Group<p></p>
+            Females:<p></p>
+            
+            Ages 16-32: The survival rate for females in this age group is the lowest among females but is still significantly high, over 70%.
+            Ages 32-48: Females in this age bracket show a slightly higher survival rate than the younger age group, approaching 75%.
+            Ages 48+: The highest survival rate is observed in the oldest age group, which is near or at 100%. This suggests that older females had the highest priority during rescue operations or they were more likely to be in cabins that had better access to lifeboats.
+            <p></p>
+            Males:<p></p>
+            
+            Ages 16-32: Young adult males have the highest survival rate among males, yet it is notably lower than that of their female counterparts, at around 20%.
+            Ages 32-48: This group's survival rate is slightly lower than the younger males, hovering around 15%.
+            Ages 48+: The oldest male group has the lowest survival rate, which is under 10%, indicating that older males had the lowest chance of survival during the disaster.<p></p>
+            Insights and Observations<p></p>
+            The chart clearly indicates a gender disparity in survival rates, with women of all age groups having a higher chance of surviving than men. Additionally, the trend shows that within each gender, different age groups had varying survival rates, with the highest rates seen in the oldest female group and the lowest in the oldest male group.
+            
+            This pattern reinforces previous observations regarding the prioritization of women for rescue efforts, and it also suggests that age played a role in survival chances, especially for women. For men, even being in the relatively younger age bracket did not afford a significant survival advantage, further emphasizing the strong gender bias in the rescue operations.
+            <p></p>
+            Conclusions<p></p>
+            The analysis of survival rates by gender and age groups aboard the Titanic reveals a significant gender advantage for females, which persisted across all age groups. Within gender categories, age appears to influence survival probabilities for females but has less impact on males, who uniformly had lower survival rates. These observations underline the gender and age biases that were present during the life-saving efforts of the Titanic tragedy.</p>
+        <img src="img/4.png" alt="Page 4">
+      </div>
+      <button class="prev">Previous Page</button>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Machine Learning Model Evaluation and Feature Importance: Titanic Dataset</h1>
+        <p>Cross-validation Scores of Different Models<p></p>
+            Logistic Regression:<p></p>
+            
+            Shows a median accuracy of approximately 0.80 with the interquartile range (IQR) indicating variability between about 0.79 and 0.81.
+            The mean accuracy is marked by the triangle and is slightly above the median, suggesting a slight skew in the distribution of accuracy scores.
+            
+            Decision Tree:<p></p>
+            
+            The median accuracy is near 0.80, similar to logistic regression, but with a wider IQR stretching from just below 0.79 to about 0.82, indicating more variability in performance across cross-validation folds.
+            The mean accuracy is again higher than the median, which suggests the presence of higher outliers in model performance.<p></p>
+            Random Forest:<p></p>
+            
+            Has a median accuracy just above 0.81 and an IQR from approximately 0.80 to almost 0.83, which is narrower than the decision tree's IQR.
+            The mean accuracy is very close to the median, indicating a more symmetrical distribution of scores.
+            These models' performances are quite close, but the Random Forest model appears to be the most stable with the highest median accuracy and the least variability among the three.<p></p>
+            
+            Feature Importances<p></p>
+            Fare (num_Fare): Shows the highest importance among the features considered, which implies that the ticket fare was a strong predictor of survival.
+            Age (num_Age): Also appears to be an important feature, though slightly less so than fare.
+            Gender (cat_Sex_female and cat_Sex_male): Female gender has a higher importance than male, corroborating the "women and children first" historical accounts.
+            Family Size (num_Family_Size): Has moderate importance, suggesting that the size of a passenger's family had some impact on survival chances.
+            Embarkation Ports (cat_Embarked_C, cat_Embarked_S, cat_Embarked_Q): The importance of these features is relatively low, indicating that the port of embarkation was a less critical factor in predicting survival.
+            The color scale on the right of the feature importance graph suggests that the importance of features may be relative to one another within the context of the model used (possibly the Random Forest model due to the color match with the cross-validation scores plot).
+            <p></p>
+            Conclusion<p></p>
+            The Random Forest model demonstrates the best performance in terms of both accuracy and consistency across different cross-validation folds for predicting survival on the Titanic. Fare and age are the most important features, with gender also playing a significant role. This analysis assists in understanding the predictive dynamics of the model and can guide further refinement of the machine learning process for enhanced model accuracy.</p>
+        <img src="img/6-7.png" alt="Page 5">
+      </div>
+      <button class="prev">Previous Page</button>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Machine Learning Model Performance Evaluation: Titanic Survivor Prediction</h1>
+        <p>Introduction<p></p>
+            This report evaluates a machine learning model developed to predict the survival of passengers aboard the Titanic. The evaluation is based on a confusion matrix, Receiver Operating Characteristic (ROC) curve, and Precision-Recall curve.
+            <p></p>
+            Confusion Matrix<p></p>
+            The confusion matrix presents the number of correct and incorrect predictions made by the model:<p></p>
+            
+            True negatives (TN): 91 predictions correctly identified as non-survivors.
+            False positives (FP): 14 predictions incorrectly identified as survivors.
+            True positives (TP) and false negatives (FN) are not visible in the provided image.
+            Receiver Operating Characteristic (ROC) Curve
+            The ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. The Area Under the Curve (AUC) for this model is 0.89, which indicates a very good predictive performance. An AUC of 1 represents a perfect model, while an AUC of 0.5 suggests a performance no better than random chance.
+            <p></p>
+            Precision-Recall Curve<p></p>
+            The Precision-Recall curve shows the trade-off between precision (the proportion of positive identifications that were actually correct) and recall (the proportion of actual positives that were correctly identified). The curve suggests that as recall increases, precision decreases, which is typical behavior for such a curve. However, precise values for precision and recall at various thresholds cannot be determined from the image provided.
+            <p></p>
+            Conclusions<p></p>
+            The evaluation metrics indicate that the machine learning model has a strong ability to distinguish between survivors and non-survivors of the Titanic disaster. The high AUC value suggests that the model has a good measure of separability and is able to make accurate predictions most of the time. The precision-recall curve indicates that there may be a range of thresholds where the model maintains a reasonable balance between precision and recall. The exact choice of threshold would depend on the specific cost/benefit trade-offs relevant to the problem domain (e.g., whether it is more important to capture as many survivors as possible or to be very confident about the predictions of survival).
+            
+            For further validation, it would be advisable to consider additional metrics such as F1-score, the visible TP and FN values from the confusion matrix, and to perform cross-validation to assess the model's performance across different subsets of the data.</p>
+        <img src="img/5.png" alt="Page 6">
+      </div>
+      <button class="prev">Previous Page</button>
+      <button class="next">Next Page</button>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Outputting the prediction result</h1>
+        <p><pre><code>
+            # Creating test data
+            test_passenger = {
+                'Pclass': [3],
+                'Sex': ['male'],
+                'Age': [25],
+                'SibSp': [0],
+                'Parch': [0],
+                'Fare': [7.8958],
+                'Embarked': ['S'],
+                'Cabin_Missing': [1]
+            }
+            
+            test_data = pd.DataFrame(test_passenger)
+            
+            # Adding 'Family_Size' feature
+            test_data['Family_Size'] = test_data['SibSp'] + test_data['Parch']
+            
+            # Preprocessing the test data
+            test_preprocessed = preprocessor.transform(test_data)
+            
+            # Using the best model for prediction
+            prediction = best_rf_model.predict(test_preprocessed)
+            
+            # Outputting the prediction result
+            if prediction[0] == 1:
+                print("Prediction: Passenger survived")
+            else:
+                print("Prediction: Passenger did not survive")
+
+
+
+            result: Passenger did not survive
+            </code></p>
+      </div>
+      <button class="prev">Previous Page</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
