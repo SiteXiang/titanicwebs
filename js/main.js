@@ -38,3 +38,18 @@ nextButtons.forEach(button => {
 });
 
 showPage(currentPage); // 初始化显示第一页
+
+const music = document.getElementById('backgroundMusic');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    let isPlaying = false;
+
+    playPauseBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            music.pause();
+            playPauseBtn.textContent = 'Play';
+        } else {
+            music.play();
+            playPauseBtn.textContent = 'Pause';
+        }
+        isPlaying = !isPlaying;
+    });

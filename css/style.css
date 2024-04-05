@@ -109,3 +109,16 @@ button {
 .page.flip {
     animation: page-flip 2s forwards;
 }
+
+#playPauseBtn {
+    position: absolute; /* 绝对定位 */
+    top: 10px; /* 距离顶部10像素 */
+    left: 10px; /* 距离左边10像素 */
+    z-index: 1000; /* 确保按钮在页面上的其他元素之上 */
+    width: 100px; /* 按钮宽度 */
+    height: 40px; /* 按钮高度 */
+    padding: 5px 10px; /* 内填充 */
+    font-size: 16px; /* 文本大小 */
+    cursor: pointer; /* 鼠标悬停时的光标样式 */
+}
+
